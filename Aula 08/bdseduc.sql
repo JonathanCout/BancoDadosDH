@@ -40,7 +40,7 @@ SELECT * FROM `estudantes` WHERE `escola_id` IS NULL;
 SELECT * FROM `estudantes` WHERE `estudante_idade` BETWEEN 32 AND 45;
 
 -- 13. Liste todos os Estudantes que tenham as seguinte idades: 18, 35 e 52;
-SELECT * FROM `estudantes` WHERE `estudante_idade` = 18 OR `estudante_idade` = 35 OR `estudante_idade` = 52;
+SELECT * FROM `estudantes` WHERE `estudante_idade` IN (18,35,52);
 
 -- 14. Liste todos os Estudantes cujo nome comece com "A";
 SELECT * FROM `estudantes` WHERE `estudante_nome` LIKE 'A%';
